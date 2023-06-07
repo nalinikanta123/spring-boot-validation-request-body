@@ -1,6 +1,6 @@
 # spring-boot-validation-request-body
 Validate Request Inputs
-<p>
+```validation tags
 @NotNull: Marks a field as required and cannot be null.
 @NotBlank: Marks a field as required and cannot be blank.
 @NotEmpty: Marks a field (including collection, map, or array) as required and cannot be empty.
@@ -24,10 +24,10 @@ Validate Request Inputs
 @URL: Validates that a field is a valid URL.
 @Validated: Indicates that a class or interface should be validated recursively.
 @Range: Specifies a range of values for a field.
+```
 
 
-
-
+```regular expression in detail
 ^: the start of the string
 (?=.*\d): at least one digit
 (?=.*[a-z]): at least one lowercase letter
@@ -35,7 +35,7 @@ Validate Request Inputs
 (?=.*[@#$%^&+=!*()]): at least one special character
 .{8,}: at least 8 characters long
 $: the end of the string
-
+```
 
 Difference : 
 @NotNull : to say that a field must not be null. 
@@ -44,7 +44,7 @@ Difference :
 
 http://localhost:8080/api/auth/signup
 
-RequestBody:
+```RequestBody:
 {
     "username": "testuser",
     "email": "testuser@gmail.com",
@@ -54,8 +54,8 @@ RequestBody:
     "confirmPassword": "silence1234",
     "address": {}
 }
-
-ResponseBody: 400 Bad Request
+```
+```ResponseBody: 400 Bad Request
 {
     "errors": [
         "[Address] The city is required.",
@@ -63,9 +63,9 @@ ResponseBody: 400 Bad Request
         "[Address] The street name is required."
     ]
 }
+```
 
-
-RequestBody:
+```RequestBody:
 
 {
     "username": "testuser",
@@ -79,9 +79,7 @@ RequestBody:
         "street": "Franklin St"
     }
 }
-
-ResponseBody: 200 OK
+```
+```ResponseBody: 200 OK
 User registered Successfully!
-
-
-</p>
+```

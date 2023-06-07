@@ -44,7 +44,8 @@ $: the end of the string
 ```
 http://localhost:8080/api/auth/signup
 
-```RequestBody:
+```
+RequestBody:
 {
     "username": "testuser",
     "email": "testuser@gmail.com",
@@ -55,7 +56,8 @@ http://localhost:8080/api/auth/signup
     "address": {}
 }
 ```
-```ResponseBody: 400 Bad Request
+```
+ResponseBody: 400 Bad Request
 {
     "errors": [
         "[Address] The city is required.",
@@ -65,7 +67,8 @@ http://localhost:8080/api/auth/signup
 }
 ```
 
-```RequestBody:
+```
+RequestBody:
 
 {
     "username": "testuser",
@@ -80,6 +83,7 @@ http://localhost:8080/api/auth/signup
     }
 }
 ```
-```ResponseBody: 200 OK
+```
+ResponseBody: 200 OK
 User registered Successfully!
 ```

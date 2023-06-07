@@ -1,6 +1,6 @@
 # spring-boot-validation-request-body
 Validate Request Inputs
-
+<p>
 @NotNull: Marks a field as required and cannot be null.
 @NotBlank: Marks a field as required and cannot be blank.
 @NotEmpty: Marks a field (including collection, map, or array) as required and cannot be empty.
@@ -84,4 +84,4 @@ ResponseBody: 200 OK
 User registered Successfully!
 
 
-
+</p>

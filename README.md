@@ -37,11 +37,11 @@ Validate Request Inputs
 $: the end of the string
 ```
 
-Difference : 
+```Difference : 
 @NotNull : to say that a field must not be null. 
 @NotEmpty : to say that a list field must not empty. 
 @NotBlank : to say that a string field must not be the empty string (i.e. it must have at least one character).
-
+```
 http://localhost:8080/api/auth/signup
 
 ```RequestBody:
